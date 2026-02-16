@@ -46,6 +46,7 @@ modules:
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - gcdmaster
 
   - type: default-flatpaks
     configurations:
@@ -53,12 +54,13 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
+          - org.chromium.Chromium
           - com.ranfdev.DistroShelf
           - com.makemkv.MakeMKV
           - fr.handbrake.ghb
           - org.videolan.VLC
           - org.onlyoffice.desktopeditors
+          - com.discordapp.Discord
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
