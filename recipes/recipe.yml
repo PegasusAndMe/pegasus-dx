@@ -25,23 +25,21 @@ modules:
     install:
       packages:
         - audex
+        - digikam
         - distrobox
         - fastfetch
         - gh
         - gwenview
-     #   - HandBrake-cli
-     #   - HandBrake-gui
+        - haruna
         - k3b
         - kate
-     #   - makemkv
+        - krita
         - mediawriter
         - micro
         - okular
         - starship
         - topgrade
         - virt-manager
-     #   - vlc
-     #   - vlc-plugins-all
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -57,9 +55,10 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
           - com.ranfdev.DistroShelf
-     #     - com.makemkv.MakeMKV
-     #     - fr.handbrake.ghb
-     #     - org.videolan.VLC
+          - com.makemkv.MakeMKV
+          - fr.handbrake.ghb
+          - org.videolan.VLC
+          - org.onlyoffice.desktopeditors
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
