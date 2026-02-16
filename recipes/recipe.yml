@@ -27,6 +27,7 @@ modules:
         - audex
         - distrobox
         - fastfetch
+        - gh
         - gwenview
      #   - HandBrake-cli
      #   - HandBrake-gui
