@@ -2,7 +2,7 @@
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template: https://github.com/blue-build/template
 
-This is a custom image based on the Universal Blue modified Kinoite (main) image located here: ghcr.io/ublue-os/kinoite-main. This is pulling from "latest" and not a specific version... for now at least. 
+This is a custom image based on the Universal Blue modified Kinoite (main) image: ghcr.io/ublue-os/kinoite-main. This is pulling from "latest" and not a specific version... for now at least. 
 
 I have added a few additional packages on top of the already-modifed base to minimize juggling of layers when deploying to my machines. You might find this useful if you like Plasma and what UBlue has added to images such as Bazzite or Aurora, but are looking for a more "vanilla" experience. This is NOT a gaming focussed spin, but can easily be tailored for that.  
 
