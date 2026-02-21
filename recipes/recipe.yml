@@ -28,8 +28,6 @@ modules:
         - audex
         - distrobox
         - dms
-        - lxqt
-        - lxqt-niri
         - niri
         - niri-settings
         - elisa
