@@ -22,10 +22,12 @@ modules:
       copr:
         - atim/starship
         - lilay/topgrade
+        - avengemedia/dms
     install:
       packages:
         - audex
         - distrobox
+        - dms
         - elisa
         - fastfetch
         - gh
