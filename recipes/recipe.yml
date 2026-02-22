@@ -22,14 +22,10 @@ modules:
       copr:
         - atim/starship
         - lilay/topgrade
-        - avengemedia/dms
     install:
       packages:
         - audex
         - distrobox
-        - dms
-        - niri
-        - niri-settings
         - elisa
         - fastfetch
         - gh
@@ -40,6 +36,7 @@ modules:
         - kolourpaint
         - mediawriter
         - micro
+        - mlocate
         - okular
         - starship
         - topgrade
