@@ -1,12 +1,12 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: pegasus-dx
+name: pegasus-min
 # description will be included in the image's metadata
-description: Plasma Desktop with some cool stuff. Somewhere between Kinoite and Aurora.  
+description: Minimal build for testing. Will eventually have some cool stuff.  
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/base-main
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -24,23 +24,14 @@ modules:
         - lilay/topgrade
     install:
       packages:
-        - audex
         - distrobox
-        - elisa
         - fastfetch
         - gh
-        - gwenview
-        - haruna
-        - kate
-        - kcalc
-        - kolourpaint
-        - mediawriter
+        - htop
         - micro
         - plocate
-        - okular
         - starship
         - topgrade
-        - virt-manager
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -54,9 +45,7 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.chromium.Chromium
-          - com.ranfdev.DistroShelf
-          - org.onlyoffice.desktopeditors
+        #  - org.chromium.Chromium
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
