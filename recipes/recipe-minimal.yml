@@ -3,7 +3,11 @@
 # image will be published to ghcr.io/<user>/<name>
 name: pegasus-min
 # description will be included in the image's metadata
-description: Minimal build for testing. Will eventually have some cool stuff.  
+description: Minimal build to be used as a base for light WMs or as a home server.
+
+# NOTE: Layering is still experimental. My idea is to copy this to new recipes
+# that can add mission specific containerized services (ie. media server) or
+# as a starting point for adding minimal DE/WM workstations (ie. niri/noctalia). 
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/base-main
