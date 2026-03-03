@@ -6,7 +6,7 @@ This is a custom image based on the Universal Blue modified Kinoite (main) image
 
 I have added a few additional packages on top of the already-modifed base to minimize juggling of layers when deploying to my machines. You might find this useful if you like Plasma and what UBlue has added to images such as Bazzite or Aurora, but are looking for a more "vanilla" experience. This is NOT a gaming focussed spin, but can easily be tailored for that.  
 
-My primary usage is multimedia operations and development, so I've got multimedia tools like audex that don't have flatpaks and have included distrobox, distroshelf, and virt-manager. I'm still fine tuning things as of 2/15/2026, so there will likely be daily'ish changes to the recipe.yml file until the dust settles. 
+My primary usage is multimedia operations and development, so I have added multimedia tools like audex that don't have flatpaks and have included distrobox, distroshelf, and virt-manager. There is also a no-desktop "minimal" recipe in the recipes directory, but this has not yet been tested or deployed. I will update and add the rebase commands below once it is ready for prime time.
 
 ## Installation
 
