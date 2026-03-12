@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: pegasus-min
+name: pegasus-dx-min
 # description will be included in the image's metadata
 description: Minimal build to be used as a base for light WMs or as a home server.
 
