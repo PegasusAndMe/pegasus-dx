@@ -15,17 +15,29 @@ My primary usage is multimedia operations and development, so I have added multi
 
 To rebase an existing atomic Fedora installation to the latest pegasus-dx build:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+- First rebase to the unsigned image, to get the proper signing keys and policies installed. Choose once of the three images below:
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/pegasusandme/pegasus-dx:latest
+  ```
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/pegasusandme/pegasus-dx-min:latest
+  ```
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/pegasusandme/pegasus-dx-nvidia:latest
   ```
 - Reboot to complete the rebase:
   ```
   systemctl reboot
   ```
-- Then rebase to the signed image, like so:
+- Then rebase to the signed image, like so (make sure to use the same image as above):
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/pegasusandme/pegasus-dx:latest
+  ```
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/pegasusandme/pegasus-dx-min:latest
+  ```
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/pegasusandme/pegasus-dx-nvidia:latest
   ```
 - Reboot again to complete the installation
   ```
