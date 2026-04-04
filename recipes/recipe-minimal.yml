@@ -33,6 +33,7 @@ modules:
         - gh
         - htop
         - micro
+        - ncdu
         - plocate
         - starship
         - topgrade
