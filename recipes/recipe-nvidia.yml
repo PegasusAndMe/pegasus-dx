@@ -36,6 +36,7 @@ modules:
         - kolourpaint
         - mediawriter
         - micro
+        - ncdu
         - plocate
         - okular
         - starship
