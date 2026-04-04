@@ -56,7 +56,7 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - org.chromium.Chromium
-          - com.ranfdev.DistroShelf
+          - io.github.DenysMb.Kontainer 
           - org.onlyoffice.desktopeditors
       - scope: user # Also add Flathub user repo, but no user packages
 
