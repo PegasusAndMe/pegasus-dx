@@ -27,8 +27,6 @@ To rebase an existing atomic Fedora installation to the latest pegasus-dx build:
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/pegasusandme/pegasus-dx:latest
   ```
-ree rebase ostree-image-signed:docker://ghcr.io/pegasusandme/pegasus-dx-nvidia:latest
-  ```
 - Reboot again to complete the installation
   ```
   systemctl reboot
