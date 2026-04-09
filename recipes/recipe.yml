@@ -34,6 +34,7 @@ modules:
         - kate
         - kcalc
         - kolourpaint
+        - konsole
         - mediawriter
         - micro
         - ncdu
