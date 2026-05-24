@@ -33,6 +33,7 @@ modules:
         - haruna
         - kate
         - kcalc
+        - kmail
         - kolourpaint
         - konsole
         - mediawriter
